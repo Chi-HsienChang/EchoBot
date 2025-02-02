@@ -136,6 +136,8 @@ def handle_message(event):
             messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
         elif user_message == '禮拜了嗎?':
             messages = [TextMessage(text='準備去禮拜!', quick_reply=quick_reply_options)]
+        elif user_message == 'Test':
+            messages = [TextMessage(text='Test!!!!!', quick_reply=quick_reply_options)]
         else:
             messages = [TextMessage(text='願真主賜您平安', quick_reply=quick_reply_options)]
 

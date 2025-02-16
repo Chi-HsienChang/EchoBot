@@ -34,7 +34,7 @@ def callback():
         abort(400)
 
     return 'OK'
-
+"""
 def create_rich_menu_1():
     with ApiClient(configuration) as api_client:
         line_bot_api = MessagingApi(api_client)
@@ -103,7 +103,7 @@ def handle_follow(event):
                 messages=[TextMessage(text='願真主賜您平安')]
             )
         )
-
+"""
 @line_handler.add(MessageEvent, message=TextMessageContent)
 def handle_message(event):
     user_message = event.message.text.strip()
@@ -163,7 +163,7 @@ def handle_message(event):
             print(f"❌ LINE API 發送失敗: {e}")
 
 if __name__ == "__main__":
-    rich_menu_id = create_rich_menu_1()
-    print("rich_menu_id=", rich_menu_id)
-    upload_rich_menu_image(rich_menu_id)
+    # rich_menu_id = create_rich_menu_1()
+    # print("rich_menu_id=", rich_menu_id)
+    # upload_rich_menu_image(rich_menu_id)
     app.run(host="0.0.0.0", port=5001)

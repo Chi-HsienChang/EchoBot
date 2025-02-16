@@ -113,7 +113,7 @@ def handle_message(event):
         line_bot_api = MessagingApi(api_client)
 
         quick_reply_options = QuickReply(items=[
-            QuickReplyItem(action=MessageAction(label="禮拜33333", text="禮拜")),
+            QuickReplyItem(action=MessageAction(label="禮拜33rrrrr", text="禮拜")),
             QuickReplyItem(action=MessageAction(label="圖片", text="圖片")),
             QuickReplyItem(action=MessageAction(label="錄音", text="錄音")),
             QuickReplyItem(action=MessageAction(label="影片", text="影片")),

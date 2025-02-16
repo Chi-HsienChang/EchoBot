@@ -34,7 +34,7 @@ def callback():
         abort(400)
 
     return 'OK'
-"""
+
 def create_rich_menu_1():
     with ApiClient(configuration) as api_client:
         line_bot_api = MessagingApi(api_client)
@@ -43,7 +43,7 @@ def create_rich_menu_1():
             size=RichMenuSize(width=2500, height=1686),
             selected=True,
             name="Rich Menu 2",
-            chat_bar_text="想要學習的內容是?",
+            chat_bar_text="想要學習的內容是?????",
             areas=[
                 RichMenuArea(
                     bounds=RichMenuBounds(x=4, y=0, width=866, height=627),
@@ -81,9 +81,9 @@ def upload_rich_menu_image(rich_menu_id):
     url = f"https://api-data.line.me/v2/bot/richmenu/{rich_menu_id}/content"
     headers = {
         "Authorization": f"Bearer {CHANNEL_ACCESS_TOKEN}",
-        "Content-Type": "image/jpeg"
+        "Content-Type": "image/png"
     }
-    image_path = "static/rich_menu.jpeg"
+    image_path = "static/test.png"
 
     with open(image_path, "rb") as image_file:
         response = requests.post(url, headers=headers, data=image_file.read())
@@ -103,7 +103,7 @@ def handle_follow(event):
                 messages=[TextMessage(text='願真主賜您平安')]
             )
         )
-"""
+
 @line_handler.add(MessageEvent, message=TextMessageContent)
 def handle_message(event):
     user_message = event.message.text.strip()
@@ -163,7 +163,7 @@ def handle_message(event):
             print(f"❌ LINE API 發送失敗: {e}")
 
 if __name__ == "__main__":
-    # rich_menu_id = create_rich_menu_1()
-    # print("rich_menu_id=", rich_menu_id)
-    # upload_rich_menu_image(rich_menu_id)
+    rich_menu_id = create_rich_menu_1()
+    print("rich_menu_id=", rich_menu_id)
+    upload_rich_menu_image(rich_menu_id)
     app.run(host="0.0.0.0", port=5001)

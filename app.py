@@ -118,6 +118,11 @@ def handle_message(event):
             QuickReplyItem(action=MessageAction(label="錄音", text="錄音")),
             QuickReplyItem(action=MessageAction(label="影片", text="影片")),
             QuickReplyItem(action=MessageAction(label="連結", text="連結")),
+            QuickReplyItem(action=MessageAction(label="禮拜2", text="禮拜")),
+            QuickReplyItem(action=MessageAction(label="圖片2", text="圖片")),
+            QuickReplyItem(action=MessageAction(label="錄音2", text="錄音")),
+            QuickReplyItem(action=MessageAction(label="影片2", text="影片")),
+            QuickReplyItem(action=MessageAction(label="連結2", text="連結")),
         ])
 
         if user_message == '禮拜':

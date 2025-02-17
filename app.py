@@ -179,33 +179,33 @@ def handle_message(event):
                                         "    - 小淨前要先「淨下」，即清洗私密處。\n"
                                         "    - 穆斯林習慣用水清洗後，再用衛生紙擦拭。\n"
                                         "(2) 洗手三次 > 漱口三次 > 嗆鼻三次 > 洗臉三次 > 洗手掌至手肘三次 > 抹頭 > 洗腳三次\n"
-                                        "小淨影片教學之一: https://reurl.cc/NbKGaQ\n"
-                                        "小淨影片教學之二: https://reurl.cc/46Vp2v\n" 
+                                        "小淨影片教學之一:\nhttps://reurl.cc/NbKGaQ\n"
+                                        "小淨影片教學之二:\nhttps://reurl.cc/46Vp2v\n" 
 
                                         "✅ 禮拜方法:\n"
-                                        "每天五次禮拜: https://reurl.cc/oVEZy3\n" 
-                                        "禮拜影片教學之ㄧ: https://reurl.cc/Eg5XG1\n" 
-                                        "禮拜影片教學之二: https://reurl.cc/04M6Z6"
+                                        "每天五次禮拜:\nhttps://reurl.cc/oVEZy3\n" 
+                                        "禮拜影片教學之ㄧ:\nhttps://reurl.cc/Eg5XG1\n" 
+                                        "禮拜影片教學之二:\nhttps://reurl.cc/04M6Z6"
                                         )]
         elif user_message == '如何封齋':
             url = request.url_root + 'static/old_fast.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="此照片為舊資訊，2025年發布後會更新為最新版\n 齋戒介紹: https://reurl.cc/96m1LO \n 齋戒知識100問: https://reurl.cc/qnWZWN")
+                TextMessage(text="此照片為舊資訊，2025年發布後會更新為最新版\n 齋戒介紹:\nhttps://reurl.cc/96m1LO \n 齋戒知識100問: https://reurl.cc/qnWZWN")
             ]
         elif user_message == '如何天課':
             # url = request.url_root + 'static/mosque.jpeg'
             messages = [
                 # ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="天課介紹: https://reurl.cc/M6KXEk")
+                TextMessage(text="天課介紹:\nhttps://reurl.cc/M6KXEk")
             ]
         elif user_message == '如何朝覲':
             messages = [
-                TextMessage(text="朝覲介紹: https://reurl.cc/eGKWNL")
+                TextMessage(text="朝覲介紹:\nhttps://reurl.cc/eGKWNL")
             ]
         elif user_message == '古蘭經學習':
             messages = [
-                TextMessage(text="學習網站: https://www.islamtaiwan.com/quran \n 如何使用線上古蘭經: https://reurl.cc/qnWZER\n 古蘭經講解115部影片: https://reurl.cc/WAKD4O" )
+                TextMessage(text="學習網站:\nhttps://www.islamtaiwan.com/quran \n 如何使用線上古蘭經:\nhttps://reurl.cc/qnWZER\n 古蘭經講解115部影片:\nhttps://reurl.cc/WAKD4O" )
             ]
         else:
             messages = [TextMessage(text='願真主賜您平安\n使用說明: \n', quick_reply=quick_reply_options)]

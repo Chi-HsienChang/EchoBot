@@ -129,16 +129,32 @@ def handle_message(event):
         ])
 
         if user_message == '人生目標':
-            messages = [TextMessage(text='好的，以下是禮拜的資訊！', quick_reply=quick_reply_options)]
+            messages = [TextMessage(
+                text="📌 穆斯林的人生目標\n"
+                    "1️⃣ 只崇拜唯一的真主\n"
+                    "    - 《古蘭經》指出：「我創造精靈與人類，只為讓他們崇拜我。」（51:56）\n"
+                    "    - 穆斯林透過禮拜、齋戒、誦讀《古蘭經》等方式來表達對真主的崇拜與感謝。\n"
+                    "2️⃣ 成為受真主喜悅的穆斯林\n"
+                    "    - 人生以古蘭經和聖訓為指導，努力成為受真主喜悅的穆斯林。\n"
+                    "3️⃣ 為永恆的後世做準備\n"
+                    "    - 在後世，每個人都將因其在短暫今世的行為而接受審判，最終只有兩種結果：進入天堂或墜入火獄。\n"
+                    "    - 先知穆罕默德（願主賜他平安）說：「當一個人去世後，他的一切善行都將終止，唯有三件事能使他持續獲得真主的報賞：對社會有益的施捨；留給後人的有益知識；以及為他虔誠祈禱的子女。」\n", quick_reply=quick_reply_options)]
         elif user_message == '六大信仰':
-            url = request.url_root + 'static/test.jpeg'
-            messages = [ImageMessage(original_content_url=url, preview_image_url=url)]
+            messages = [
+                TextMessage(text="信真主、信天使、信經典、信使者、信末日、信前定\n 六大信仰介紹: \n https://reurl.cc/kMKlv9")
+            ]
         elif user_message == '真主尊名':
-            messages = [TextMessage(text='真主尊名', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="真主的九十九個尊名:\nhttps://www.islamtaiwan.com/99-names")
+            ]
         elif user_message == '禮拜時間':
-            messages = [TextMessage(text='禮拜時間', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="台灣禮拜時間:\nhttps://www.islamtaiwan.com/")
+            ]
         elif user_message == '主麻聚禮':
-            messages = [TextMessage(text='主麻聚禮', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="星期五主麻介紹:\nhttps://reurl.cc/V0b8lA")
+            ]
         elif user_message == '參觀清真寺':
             url = request.url_root + 'static/mosque.jpeg'
             messages = [
@@ -146,9 +162,13 @@ def handle_message(event):
                 TextMessage(text="✅ 點擊下方連結 ✅\n\n馬上預約: https://reurl.cc/NbKpAQ")
             ]
         elif user_message == '基礎課程':
-            messages = [TextMessage(text='基礎課程', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="新穆斯林基礎課程\n 共有8個影片:\n https://reurl.cc/NbKGaQ")
+            ]
         elif user_message == '認識先知':
-            messages = [TextMessage(text='認識先知', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="認識先知:\nhttps://reurl.cc/nqG7dl\n 先知穆罕默德:\n https://reurl.cc/d147j8")
+            ]
         elif user_message == '聖訓學習':
             messages = [TextMessage(text='聖訓學習', quick_reply=quick_reply_options)]
         elif user_message == '兩個節日':
@@ -172,13 +192,13 @@ def handle_message(event):
                 TextMessage(text="✅ 點擊下方連結 ✅\n\n預約會議: https://reurl.cc/XZKlxE")
             ]
         elif user_message == '如何禮拜':
-            messages = [TextMessage(text="因為穆斯林需要具有大淨與小淨才能禮拜。\n"
-                                        "✅ 洗大淨方法:\n 舉意洗大淨，然後用水清洗全身。\n"
-                                        "✅ 洗小淨方法:\n"
-                                        "(1) 小淨的前提：淨下\n"
-                                        "    - 小淨前要先「淨下」，即清洗私密處。\n"
-                                        "    - 穆斯林習慣用水清洗後，再用衛生紙擦拭。\n"
-                                        "(2) 洗手三次 > 漱口三次 > 嗆鼻三次 > 洗臉三次 > 洗手掌至手肘三次 > 抹頭 > 洗腳三次\n"
+            url = request.url_root + 'static/wash.jpeg'
+            url2 = request.url_root + 'static/pray.jpeg'
+            messages = [ImageMessage(original_content_url=url, preview_image_url=url),
+                        ImageMessage(original_content_url=url, preview_image_url=url2),
+                        TextMessage(text="穆斯林需要具有大淨與小淨才能禮拜。\n"
+
+                                        "✅ 小淨教學:\n"
                                         "小淨影片教學之一:\nhttps://reurl.cc/NbKGaQ\n"
                                         "小淨影片教學之二:\nhttps://reurl.cc/46Vp2v\n" 
 

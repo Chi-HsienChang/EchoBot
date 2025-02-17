@@ -137,7 +137,7 @@ def handle_message(event):
             url = request.url_root + 'static/mosque.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="✅ 點擊下方連結✅\n\n馬上預約: https://reurl.cc/NbKpAQ")
+                TextMessage(text="✅ 點擊下方連結 ✅\n\n馬上預約: https://reurl.cc/NbKpAQ")
             ]
         elif user_message == '影片':
             url = request.url_root + 'static/test.MOV'
@@ -149,7 +149,7 @@ def handle_message(event):
             url = request.url_root + 'static/become_muslim.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="✅ 點擊下方連結✅\n\n預約會議: https://reurl.cc/XZKlxE")
+                TextMessage(text="✅ 點擊下方連結 ✅\n\n預約會議: https://reurl.cc/XZKlxE")
             ]
         elif user_message == '如何禮拜':
             messages = [TextMessage(text='準備去禮拜!', quick_reply=quick_reply_options)]

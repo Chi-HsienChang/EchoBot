@@ -188,19 +188,25 @@ def handle_message(event):
                                         "禮拜影片教學之二: https://reurl.cc/04M6Z6"
                                         )]
         elif user_message == '如何封齋':
-            messages = [TextMessage(text='學習中文', quick_reply=quick_reply_options)]
-        elif user_message == '如何天課':
-            url = request.url_root + 'static/mosque.jpeg'
+            url = request.url_root + 'static/old_fast.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="✅ 點擊下方連結 ✅\n\n馬上預約: https://reurl.cc/NbKpAQ")
+                TextMessage(text="此照片為舊資訊，2025年發布後會更新為最新版\n 齋戒介紹: https://reurl.cc/96m1LO \n 齋戒知識100問: https://reurl.cc/qnWZWN")
+            ]
+        elif user_message == '如何天課':
+            # url = request.url_root + 'static/mosque.jpeg'
+            messages = [
+                # ImageMessage(original_content_url=url, preview_image_url=url),
+                TextMessage(text="天課介紹: https://reurl.cc/M6KXEk")
             ]
         elif user_message == '如何朝覲':
-            url = 'https://www.islam.org.hk/e19/'
-            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="朝覲介紹: https://reurl.cc/eGKWNL")
+            ]
         elif user_message == '古蘭經學習':
-            url = 'https://www.islam.org.hk/'
-            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="學習網站: https://www.islamtaiwan.com/quran \n 如何使用線上古蘭經: https://reurl.cc/qnWZER")
+            ]
         else:
             messages = [TextMessage(text='願真主賜您平安\n使用說明: \n', quick_reply=quick_reply_options)]
         

@@ -114,18 +114,18 @@ def handle_message(event):
 
         quick_reply_options = QuickReply(items=[
             QuickReplyItem(action=MessageAction(label="人生目標", text="人生目標")),
-            QuickReplyItem(action=MessageAction(label="六大信仰", text="圖片")),
+            QuickReplyItem(action=MessageAction(label="六大信仰", text="六大信仰")),
+            QuickReplyItem(action=MessageAction(label="禮拜時間", text="影片")),
+            QuickReplyItem(action=MessageAction(label="主麻聚禮", text="禮拜")),
+            QuickReplyItem(action=MessageAction(label="兩個節日", text="連結")),
+            QuickReplyItem(action=MessageAction(label="基礎課程", text="基礎課程")),
+            QuickReplyItem(action=MessageAction(label="參觀清真寺", text="參觀清真寺")),
+            QuickReplyItem(action=MessageAction(label="聖訓學習", text="聖訓學習")),
             QuickReplyItem(action=MessageAction(label="學習網站", text="學習網站")),
             QuickReplyItem(action=MessageAction(label="機構網站", text="機構網站")),
-            QuickReplyItem(action=MessageAction(label="參觀清真寺", text="參觀清真寺")),
-            QuickReplyItem(action=MessageAction(label="禮拜2", text="禮拜")),
-            QuickReplyItem(action=MessageAction(label="圖片2", text="圖片")),
-            QuickReplyItem(action=MessageAction(label="錄音2", text="錄音")),
-            QuickReplyItem(action=MessageAction(label="影片2", text="影片")),
-            QuickReplyItem(action=MessageAction(label="連結2", text="連結")),
-            QuickReplyItem(action=MessageAction(label="禮拜3", text="禮拜")),
-            QuickReplyItem(action=MessageAction(label="圖片3", text="圖片")),
-            QuickReplyItem(action=MessageAction(label="如何成為穆斯林", text="如何成為穆斯林")),
+            QuickReplyItem(action=MessageAction(label="穆民基礎", text="穆民基礎")),
+            QuickReplyItem(action=MessageAction(label="穆民手冊", text="穆民手冊")),
+            QuickReplyItem(action=MessageAction(label="清真飲食", text="清真餐廳")),
         ])
 
         if user_message == '禮拜':

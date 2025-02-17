@@ -218,7 +218,7 @@ def handle_message(event):
             url = request.url_root + 'static/old_fasting.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="此照片為舊資訊\n2025年發布後會更新為最新版\n\n ✅ 齋戒介紹:\nhttps://reurl.cc/96m1LO \n\n ✅ 齋戒知識100問: https://reurl.cc/qnWZWN")
+                TextMessage(text="此照片為舊資訊\n2025年發布後會更新為最新版\n\n✅ 齋戒介紹:\nhttps://reurl.cc/96m1LO \n\n✅ 齋戒知識100問: https://reurl.cc/qnWZWN")
             ]
         elif user_message == '如何天課':
             # url = request.url_root + 'static/mosque.jpeg'
@@ -232,7 +232,7 @@ def handle_message(event):
             ]
         elif user_message == '古蘭經學習':
             messages = [
-                TextMessage(text="✅ 學習網站:\nhttps://www.islamtaiwan.com/quran \n\n ✅ 如何使用線上古蘭經:\nhttps://reurl.cc/qnWZER\n\n✅ 古蘭經講解115部影片:\nhttps://reurl.cc/WAKD4O" )
+                TextMessage(text="✅ 學習網站:\nhttps://www.islamtaiwan.com/quran \n\n✅ 如何使用線上古蘭經:\nhttps://reurl.cc/qnWZER\n\n✅ 古蘭經講解115部影片:\nhttps://reurl.cc/WAKD4O" )
             ]
         else:
             messages = [TextMessage(text='願真主賜您平安\n使用說明: \n', quick_reply=quick_reply_options)]

@@ -169,19 +169,26 @@ def handle_message(event):
             messages = [
                 TextMessage(text="認識先知:\nhttps://reurl.cc/nqG7dl\n 先知穆罕默德:\n https://reurl.cc/d147j8")
             ]
+
         elif user_message == '聖訓學習':
-            messages = [TextMessage(text='聖訓學習', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="聖訓學習:\nhttps://www.norislam.com/html/hadith/\n\n 聖訓查詢:\nhttps://www.islam.org.hk/Bukhari_Online/bukhari_online_tc.aspx")
+            ]
         elif user_message == '兩個節日':
-            messages = [TextMessage(text='兩個節日', quick_reply=quick_reply_options)]
+            messages = [TextMessage(text='每年的二次會禮（Eid Prayer）：\n\n 1️⃣ 開齋節會禮（Eid Al-Fitr） 回曆的九月為齋月，整個月裡日出至日落禁食。接著十月一日便可開齋，並舉行會禮，慶祝齋戒的完成，男女皆可至清真寺參加。 \n\n 2️⃣ 宰牲節會禮（Eid Al-Adha）（又稱犧牲節，忠孝節） 為回曆十二月十日，以紀念易布拉欣聖人及其子易斯瑪義對真主的絕對服從。會禮後如能力許可，應每人（或每戶）宰一隻羊，三分之一自家享用；三分之一給親友鄰居；三分之一給窮人。', quick_reply=quick_reply_options)]
         elif user_message == '學習網站':
-            url = 'https://www.islam.org.hk/e19/'
-            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="穆民基礎:\nhttps://www.islamtaiwan.com/muslim-basics\n 穆民手冊:\nhttps://reurl.cc/74zke1")
+            ]
         elif user_message == '機構網站':
-            url = 'https://www.islam.org.hk/'
-            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="台北清真寺:\nhttps://www.taipeimosque.org.tw/\n 台北清真寺FB:\nhttps://www.facebook.com/taipeimosque\n 中國回教協會:\nhttps://www.cmainroc.org.tw/hot_cg22960.html\n中國回教協會FB:\n https://www.facebook.com/cmainroc\n 財團法人中國回教文化教育基金會:\nhttps://ciceftw.org/\n 財團法人中國回教文化教育基金會FB:\nhttps://reurl.cc/Eg5o6m\n 以及更多伊斯蘭機構資訊:\n https://www.islamtaiwan.com/organizations")
+            ]
         elif user_message == '清真飲食':
-            url = 'https://www.islam.org.hk/e19/'
-            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+            messages = [
+                TextMessage(text="全台各地穆斯林友善餐廳、商店、以及住宿:\nhttps://www.islamtaiwan.com/halal")
+            ]
+
         #################################################
         #################################################
         #################################################

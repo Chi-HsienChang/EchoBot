@@ -141,7 +141,7 @@ def handle_message(event):
                     "    ✅ 先知穆罕默德（願主賜他平安）說：「當一個人去世後，他的一切善行都將終止，唯有三件事能使他持續獲得真主的報賞：對社會有益的施捨；留給後人的有益知識；以及為他虔誠祈禱的子女。」\n", quick_reply=quick_reply_options)]
         elif user_message == '六大信仰':
             messages = [
-                TextMessage(text="信真主、信天使、信經典、信使者、信末日、信前定\n 六大信仰介紹: \n https://reurl.cc/kMKlv9")
+                TextMessage(text="信真主、信天使、信經典、信使者、信末日、信前定\n\n✅ 六大信仰介紹:\nhttps://reurl.cc/kMKlv9")
             ]
         elif user_message == '真主尊名':
             messages = [
@@ -163,26 +163,26 @@ def handle_message(event):
             ]
         elif user_message == '基礎課程':
             messages = [
-                TextMessage(text="新穆斯林基礎課程\n 共有8個影片:\n https://reurl.cc/NbKGaQ")
+                TextMessage(text="新穆斯林基礎課程\n\n✅ 共有8個影片:\n https://reurl.cc/NbKGaQ")
             ]
         elif user_message == '認識先知':
             messages = [
-                TextMessage(text="認識先知:\nhttps://reurl.cc/nqG7dl\n 先知穆罕默德:\n https://reurl.cc/d147j8")
+                TextMessage(text="✅ 認識先知:\nhttps://reurl.cc/nqG7dl\n\n ✅ 先知穆罕默德:\nhttps://reurl.cc/d147j8")
             ]
 
         elif user_message == '聖訓學習':
             messages = [
-                TextMessage(text="聖訓學習:\nhttps://www.norislam.com/html/hadith/\n\n 聖訓查詢:\nhttps://www.islam.org.hk/Bukhari_Online/bukhari_online_tc.aspx")
+                TextMessage(text="✅ 聖訓學習:\nhttps://www.norislam.com/html/hadith/\n\n✅ 聖訓查詢:\nhttps://www.islam.org.hk/Bukhari_Online/bukhari_online_tc.aspx")
             ]
         elif user_message == '兩個節日':
             messages = [TextMessage(text='每年的二次會禮（Eid Prayer）：\n\n 1️⃣ 開齋節會禮（Eid Al-Fitr） 回曆的九月為齋月，整個月裡日出至日落禁食。接著十月一日便可開齋，並舉行會禮，慶祝齋戒的完成，男女皆可至清真寺參加。 \n\n 2️⃣ 宰牲節會禮（Eid Al-Adha）（又稱犧牲節，忠孝節） 為回曆十二月十日，以紀念易布拉欣聖人及其子易斯瑪義對真主的絕對服從。會禮後如能力許可，應每人（或每戶）宰一隻羊，三分之一自家享用；三分之一給親友鄰居；三分之一給窮人。', quick_reply=quick_reply_options)]
         elif user_message == '學習網站':
             messages = [
-                TextMessage(text="穆民基礎:\nhttps://www.islamtaiwan.com/muslim-basics\n 穆民手冊:\nhttps://reurl.cc/74zke1")
+                TextMessage(text="✅ 穆民基礎:\nhttps://www.islamtaiwan.com/muslim-basics\n\n✅ 穆民手冊:\nhttps://reurl.cc/74zke1")
             ]
         elif user_message == '機構網站':
             messages = [
-                TextMessage(text="台北清真寺:\nhttps://www.taipeimosque.org.tw/\n 台北清真寺FB:\nhttps://www.facebook.com/taipeimosque\n 中國回教協會:\nhttps://www.cmainroc.org.tw/hot_cg22960.html\n中國回教協會FB:\n https://www.facebook.com/cmainroc\n 財團法人中國回教文化教育基金會:\nhttps://ciceftw.org/\n 財團法人中國回教文化教育基金會FB:\nhttps://reurl.cc/Eg5o6m\n 以及更多伊斯蘭機構資訊:\n https://www.islamtaiwan.com/organizations")
+                TextMessage(text="✅ 台北清真寺:\nhttps://www.taipeimosque.org.tw/\n 台北清真寺FB:\nhttps://www.facebook.com/taipeimosque\n\n✅ 中國回教協會:\nhttps://www.cmainroc.org.tw/hot_cg22960.html\n中國回教協會FB:\n https://www.facebook.com/cmainroc\n\n✅ 財團法人中國回教文化教育基金會:\nhttps://ciceftw.org/\n 財團法人中國回教文化教育基金會FB:\nhttps://reurl.cc/Eg5o6m\n\n ✅ 以及更多伊斯蘭機構資訊:\n https://www.islamtaiwan.com/organizations")
             ]
         elif user_message == '清真飲食':
             messages = [

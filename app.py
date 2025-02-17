@@ -133,9 +133,12 @@ def handle_message(event):
         elif user_message == '圖片':
             url = request.url_root + 'static/test.jpeg'
             messages = [ImageMessage(original_content_url=url, preview_image_url=url)]
-        elif user_message == '錄音':
-            url = request.url_root + 'static/test.m4a'
-            messages = [AudioMessage(original_content_url=url, duration=10000)]
+        elif user_message == '參觀清真寺':
+            url = request.url_root + 'static/mosque.jpeg'
+            messages = [
+                ImageMessage(original_content_url=url, preview_image_url=url),
+                TextMessage(text="✅ 點擊下方連結✅\n\n馬上預約: https://reurl.cc/NbKpAQ")
+            ]
         elif user_message == '影片':
             url = request.url_root + 'static/test.MOV'
             messages = [VideoMessage(original_content_url=url, preview_image_url=url)]

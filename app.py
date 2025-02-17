@@ -172,19 +172,20 @@ def handle_message(event):
                 TextMessage(text="✅ 點擊下方連結 ✅\n\n預約會議: https://reurl.cc/XZKlxE")
             ]
         elif user_message == '如何禮拜':
-            messages = [TextMessage(text="在學習禮拜前，需要先學習「大淨」與「小淨」。\n\n因為穆斯林需要具有大小淨才能禮拜。\n\n"
-                                        "✅ 洗大淨方法:\n 舉意洗大淨，然後用水清洗全身。\n\n"
+            messages = [TextMessage(text="因為穆斯林需要具有大淨與小淨才能禮拜。\n"
+                                        "✅ 洗大淨方法:\n 舉意洗大淨，然後用水清洗全身。\n"
                                         "✅ 洗小淨方法:\n"
                                         "(1) 小淨的前提：淨下\n"
                                         "    - 小淨前要先「淨下」，即清洗私密處。\n"
-                                        "    - 穆斯林習慣用水清洗後，再用衛生紙擦拭。\n\n"
+                                        "    - 穆斯林習慣用水清洗後，再用衛生紙擦拭。\n"
                                         "(2) 洗手三次 > 漱口三次 > 嗆鼻三次 > 洗臉三次 > 洗手掌至手肘三次 > 抹頭 > 洗腳三次\n"
-                                        "小淨影片教學之一: [點擊連結](https://reurl.cc/NbKGaQ)"
-                                        "小淨影片教學之二: [點擊連結](https://reurl.cc/46Vp2v)\n\n" 
+                                        "小淨影片教學之一: https://reurl.cc/NbKGaQ\n"
+                                        "小淨影片教學之二: https://reurl.cc/46Vp2v\n" 
 
                                         "✅ 禮拜方法:\n"
-                                        "禮拜影片教學之ㄧ: [點擊連結](https://reurl.cc/Eg5XG1)" 
-                                        "禮拜影片教學之二: [點擊連結](https://reurl.cc/04M6Z6)"
+                                        "每天五次禮拜: https://reurl.cc/oVEZy3\n" 
+                                        "禮拜影片教學之ㄧ: https://reurl.cc/Eg5XG1\n" 
+                                        "禮拜影片教學之二: https://reurl.cc/04M6Z6"
                                         )]
         elif user_message == '如何封齋':
             messages = [TextMessage(text='學習中文', quick_reply=quick_reply_options)]

@@ -205,7 +205,7 @@ def handle_message(event):
             ]
         elif user_message == '古蘭經學習':
             messages = [
-                TextMessage(text="學習網站: https://www.islamtaiwan.com/quran \n 如何使用線上古蘭經: https://reurl.cc/qnWZER")
+                TextMessage(text="學習網站: https://www.islamtaiwan.com/quran \n 如何使用線上古蘭經: https://reurl.cc/qnWZER\n 古蘭經講解115部影片: https://reurl.cc/WAKD4O" )
             ]
         else:
             messages = [TextMessage(text='願真主賜您平安\n使用說明: \n', quick_reply=quick_reply_options)]

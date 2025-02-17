@@ -203,11 +203,11 @@ def handle_message(event):
             url2 = request.url_root + 'static/pray.jpeg'
             messages = [ImageMessage(original_content_url=url, preview_image_url=url),
                         ImageMessage(original_content_url=url, preview_image_url=url2),
-                        TextMessage(text="穆斯林需要具有大淨與小淨才能禮拜。\n"
+                        TextMessage(text="穆斯林需要具有大淨與小淨\n才能禮拜。\n\n"
 
                                         "✅ 小淨教學:\n"
                                         "小淨影片教學之一:\nhttps://reurl.cc/NbKGaQ\n"
-                                        "小淨影片教學之二:\nhttps://reurl.cc/46Vp2v\n" 
+                                        "小淨影片教學之二:\nhttps://reurl.cc/46Vp2v\n\n" 
 
                                         "✅ 禮拜方法:\n"
                                         "每天五次禮拜:\nhttps://reurl.cc/oVEZy3\n" 

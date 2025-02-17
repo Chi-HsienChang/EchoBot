@@ -142,14 +142,14 @@ def handle_message(event):
         elif user_message == '連結':
             url = 'https://www.islam.org.hk/e19/'
             messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
-        elif user_message == '禮拜了嗎?':
-            messages = [TextMessage(text='準備去禮拜!', quick_reply=quick_reply_options)]
         elif user_message == '如何成為穆斯林':
             url = request.url_root + 'static/become_muslim.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="點擊下方連結🔗 \n\n預約會議: https://reurl.cc/XZKlxE")
+                TextMessage(text="✅ 點擊下方連結✅\n\n預約會議: https://reurl.cc/XZKlxE")
             ]
+        elif user_message == '如何禮拜':
+            messages = [TextMessage(text='準備去禮拜!', quick_reply=quick_reply_options)]
         else:
             messages = [TextMessage(text='願真主賜您平安', quick_reply=quick_reply_options)]
 

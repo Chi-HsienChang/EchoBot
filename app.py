@@ -215,7 +215,7 @@ def handle_message(event):
                                         "禮拜影片教學之二:\nhttps://reurl.cc/04M6Z6"
                                         )]
         elif user_message == '如何封齋':
-            url = request.url_root + 'static/old_fast.jpeg'
+            url = request.url_root + 'static/old_fasting.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
                 TextMessage(text="此照片為舊資訊，2025年發布後會更新為最新版\n 齋戒介紹:\nhttps://reurl.cc/96m1LO \n 齋戒知識100問: https://reurl.cc/qnWZWN")

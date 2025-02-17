@@ -187,7 +187,8 @@ def handle_message(event):
                                         "(7) **抹頭** 💦\n"
                                         "(8) **洗腳三次** 🦶\n"
                                         "    - 先洗右腳再洗左腳。\n"
-                                        "📅 **預約會議**: [點擊連結](https://reurl.cc/XZKlxE)")]
+                                        "**小淨影片教學之一**: [點擊連結](https://reurl.cc/NbKGaQ)"
+                                        "**小淨影片教學之二**: [點擊連結](https://reurl.cc/46Vp2v)" )]
         elif user_message == '如何封齋':
             messages = [TextMessage(text='學習中文', quick_reply=quick_reply_options)]
         elif user_message == '如何天課':

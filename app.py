@@ -262,17 +262,7 @@ def handle_message(event):
                     "🔹 清真飲食\n\n"
                     "謝謝您!😊"
             )]
-
-
-
-        # elif user_message == '影片':
-        #     url = request.url_root + 'static/test.MOV'
-        #     messages = [VideoMessage(original_content_url=url, preview_image_url=url)]
-        # elif user_message == '連結':
-        #     url = 'https://www.islam.org.hk/e19/'
-        #     messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
-
-
+            
         print(f"📤 準備回應: {messages}")
 
         try:

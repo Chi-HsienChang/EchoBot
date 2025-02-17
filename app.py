@@ -204,7 +204,7 @@ def handle_message(event):
             url = request.url_root + 'static/old_fasting.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="此照片為舊資訊\n2025年發布後會更新為最新版\n\n✅ 齋戒介紹:\nhttps://reurl.cc/96m1LO \n\n✅ 齋戒知識100問: https://reurl.cc/qnWZWN")
+                TextMessage(text="此照片為舊資訊\n2025年發布後會更新為最新版\n\n✅ 齋戒介紹:\nhttps://reurl.cc/96m1LO \n\n✅ 齋戒知識100問:\nhttps://reurl.cc/qnWZWN")
             ]
         elif user_message == '如何天課':
             # url = request.url_root + 'static/mosque.jpeg'

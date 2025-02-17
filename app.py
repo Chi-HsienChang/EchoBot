@@ -113,11 +113,11 @@ def handle_message(event):
         line_bot_api = MessagingApi(api_client)
 
         quick_reply_options = QuickReply(items=[
-            QuickReplyItem(action=MessageAction(label="禮拜33333", text="禮拜")),
-            QuickReplyItem(action=MessageAction(label="圖片", text="圖片")),
-            QuickReplyItem(action=MessageAction(label="錄音", text="錄音")),
-            QuickReplyItem(action=MessageAction(label="影片", text="影片")),
-            QuickReplyItem(action=MessageAction(label="連結", text="連結")),
+            QuickReplyItem(action=MessageAction(label="人生目標", text="人生目標")),
+            QuickReplyItem(action=MessageAction(label="六大信仰", text="圖片")),
+            QuickReplyItem(action=MessageAction(label="學習網站", text="學習網站")),
+            QuickReplyItem(action=MessageAction(label="機構網站", text="機構網站")),
+            QuickReplyItem(action=MessageAction(label="參觀清真寺", text="參觀清真寺")),
             QuickReplyItem(action=MessageAction(label="禮拜2", text="禮拜")),
             QuickReplyItem(action=MessageAction(label="圖片2", text="圖片")),
             QuickReplyItem(action=MessageAction(label="錄音2", text="錄音")),

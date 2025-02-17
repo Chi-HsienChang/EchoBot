@@ -172,7 +172,7 @@ def handle_message(event):
                 TextMessage(text="✅ 點擊下方連結 ✅\n\n預約會議: https://reurl.cc/XZKlxE")
             ]
         elif user_message == '如何禮拜':
-            messages = [TextMessage(text='準備去禮拜!', quick_reply=quick_reply_options)]
+            messages = [TextMessage(text="在學習禮拜前，需要先學習大淨與小淨\n因為穆斯林需要具有大淨與小淨才能禮拜\n預約會議: https://reurl.cc/XZKlxE")]
         elif user_message == '如何封齋':
             messages = [TextMessage(text='學習中文', quick_reply=quick_reply_options)]
         elif user_message == '如何天課':

@@ -181,14 +181,14 @@ def handle_message(event):
         elif user_message == '如何成為穆斯林':
             url = request.url_root + 'static/become_muslim.jpeg'
             messages = [
-                ImageMessage(original_content_url=url, preview_image_url=url, quick_reply=quick_reply_options),
-                TextMessage(text="✅ 點擊下方連結 ✅\n\n預約會議: https://reurl.cc/XZKlxE", quick_reply=quick_reply_options)
+                ImageMessage(original_content_url=url, preview_image_url=url),
+                TextMessage(text="✅ 點擊下方連結 ✅\n\n預約會議: https://reurl.cc/XZKlxE")
             ]
         elif user_message == '如何禮拜':
             url = request.url_root + 'static/wash.jpeg'
             url2 = request.url_root + 'static/pray.jpeg'
-            messages = [ImageMessage(original_content_url=url, preview_image_url=url, quick_reply=quick_reply_options),
-                        ImageMessage(original_content_url=url, preview_image_url=url2, quick_reply=quick_reply_options),
+            messages = [ImageMessage(original_content_url=url, preview_image_url=url),
+                        ImageMessage(original_content_url=url, preview_image_url=url2),
                         TextMessage(text="穆斯林需要具有大淨與小淨\n才能禮拜。\n\n"
 
                                         "✅ 小淨教學:\n"
@@ -203,22 +203,22 @@ def handle_message(event):
         elif user_message == '如何封齋':
             url = request.url_root + 'static/old_fasting.jpeg'
             messages = [
-                ImageMessage(original_content_url=url, preview_image_url=url, quick_reply=quick_reply_options),
-                TextMessage(text="此照片為舊資訊\n2025年發布後會更新為最新版\n\n✅ 齋戒介紹:\nhttps://reurl.cc/96m1LO \n\n✅ 齋戒知識100問: https://reurl.cc/qnWZWN", quick_reply=quick_reply_options)
+                ImageMessage(original_content_url=url, preview_image_url=url),
+                TextMessage(text="此照片為舊資訊\n2025年發布後會更新為最新版\n\n✅ 齋戒介紹:\nhttps://reurl.cc/96m1LO \n\n✅ 齋戒知識100問: https://reurl.cc/qnWZWN")
             ]
         elif user_message == '如何天課':
             # url = request.url_root + 'static/mosque.jpeg'
             messages = [
                 # ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="天課介紹:\nhttps://reurl.cc/M6KXEk", quick_reply=quick_reply_options)
+                TextMessage(text="天課介紹:\nhttps://reurl.cc/M6KXEk")
             ]
         elif user_message == '如何朝覲':
             messages = [
-                TextMessage(text="朝覲介紹:\nhttps://reurl.cc/eGKWNL", quick_reply=quick_reply_options)
+                TextMessage(text="朝覲介紹:\nhttps://reurl.cc/eGKWNL")
             ]
         elif user_message == '古蘭經學習':
             messages = [
-                TextMessage(text="✅ 學習網站:\nhttps://www.islamtaiwan.com/quran \n\n✅ 如何使用線上古蘭經:\nhttps://reurl.cc/qnWZER\n\n✅ 古蘭經講解115部影片:\nhttps://reurl.cc/WAKD4O", quick_reply=quick_reply_options)
+                TextMessage(text="✅ 學習網站:\nhttps://www.islamtaiwan.com/quran \n\n✅ 如何使用線上古蘭經:\nhttps://reurl.cc/qnWZER\n\n✅ 古蘭經講解115部影片:\nhttps://reurl.cc/WAKD4O" )
             ]
         else:
             messages = [TextMessage(
@@ -245,7 +245,7 @@ def handle_message(event):
                     "🔹 機構網站\n"
                     "🔹 清真飲食\n\n"
                     "謝謝您!!!😊"
-            , quick_reply=quick_reply_options)]
+            )]
 
         print(f"📤 準備回應: {messages}")
 

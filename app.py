@@ -125,7 +125,7 @@ def handle_message(event):
             QuickReplyItem(action=MessageAction(label="連結2", text="連結")),
             QuickReplyItem(action=MessageAction(label="禮拜3", text="禮拜")),
             QuickReplyItem(action=MessageAction(label="圖片3", text="圖片")),
-            QuickReplyItem(action=MessageAction(label="錄音3", text="錄音")),
+            QuickReplyItem(action=MessageAction(label="如何成為穆斯林", text="如何成為穆斯林")),
         ])
 
         if user_message == '禮拜':
@@ -144,8 +144,9 @@ def handle_message(event):
             messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
         elif user_message == '禮拜了嗎?':
             messages = [TextMessage(text='準備去禮拜!', quick_reply=quick_reply_options)]
-        elif user_message == 'Test':
-            messages = [TextMessage(text='Test!!!!!', quick_reply=quick_reply_options)]
+        elif user_message == '如何成為穆斯林':
+            url = request.url_root + 'static/become_muslim.jpeg'
+            messages = [ImageMessage(original_content_url=url, preview_image_url=url)]
         else:
             messages = [TextMessage(text='願真主賜您平安', quick_reply=quick_reply_options)]
 

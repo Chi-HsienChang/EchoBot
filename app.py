@@ -180,7 +180,12 @@ def handle_message(event):
                                         "    - 穆斯林習慣用水清洗後，再用衛生紙擦拭。\n\n"
                                         "(2) 洗手三次 > 漱口三次 > 嗆鼻三次 > 洗臉三次 > 洗手掌至手肘三次 > 抹頭 > 洗腳三次\n"
                                         "小淨影片教學之一: [點擊連結](https://reurl.cc/NbKGaQ)"
-                                        "小淨影片教學之二: [點擊連結](https://reurl.cc/46Vp2v)" )]
+                                        "小淨影片教學之二: [點擊連結](https://reurl.cc/46Vp2v)\n\n" 
+
+                                        "✅ 禮拜方法:\n"
+                                        "禮拜影片教學之ㄧ: [點擊連結](https://reurl.cc/Eg5XG1)" 
+                                        "禮拜影片教學之二: [點擊連結](https://reurl.cc/04M6Z6)"
+                                        )]
         elif user_message == '如何封齋':
             messages = [TextMessage(text='學習中文', quick_reply=quick_reply_options)]
         elif user_message == '如何天課':

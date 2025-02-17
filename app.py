@@ -244,8 +244,7 @@ def handle_message(event):
                     "🔹 學習網站\n"
                     "🔹 機構網站\n"
                     "🔹 清真飲食\n\n"
-                    "謝謝您😊"
-            )]
+                    "謝謝您😊", quick_reply=quick_reply_options)]
 
         print(f"📤 準備回應: {messages}")
 

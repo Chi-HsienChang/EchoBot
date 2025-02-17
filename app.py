@@ -118,14 +118,14 @@ def handle_message(event):
             QuickReplyItem(action=MessageAction(label="真主尊名", text="真主尊名")), #3
             QuickReplyItem(action=MessageAction(label="禮拜時間", text="禮拜時間")), #4
             QuickReplyItem(action=MessageAction(label="主麻聚禮", text="主麻聚禮")), #5
-            QuickReplyItem(action=MessageAction(label="參觀清真寺", text="參觀清真寺")), #6
-            QuickReplyItem(action=MessageAction(label="基礎課程", text="基礎課程")), #7
-            QuickReplyItem(action=MessageAction(label="認識先知", text="認識先知")), #8  
-            QuickReplyItem(action=MessageAction(label="聖訓學習", text="聖訓學習")), #9     
-            QuickReplyItem(action=MessageAction(label="兩個節日", text="兩個節日")), #10
-            QuickReplyItem(action=MessageAction(label="學習網站", text="學習網站")), #11
-            QuickReplyItem(action=MessageAction(label="機構網站", text="機構網站")), #12
-            QuickReplyItem(action=MessageAction(label="清真飲食", text="清真飲食")), #13
+            # QuickReplyItem(action=MessageAction(label="參觀清真寺", text="參觀清真寺")), #6
+            # QuickReplyItem(action=MessageAction(label="基礎課程", text="基礎課程")), #7
+            # QuickReplyItem(action=MessageAction(label="認識先知", text="認識先知")), #8  
+            # QuickReplyItem(action=MessageAction(label="聖訓學習", text="聖訓學習")), #9     
+            # QuickReplyItem(action=MessageAction(label="兩個節日", text="兩個節日")), #10
+            # QuickReplyItem(action=MessageAction(label="學習網站", text="學習網站")), #11
+            # QuickReplyItem(action=MessageAction(label="機構網站", text="機構網站")), #12
+            # QuickReplyItem(action=MessageAction(label="清真飲食", text="清真飲食")), #13
         ])
 
         if user_message == '人生目標':

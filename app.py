@@ -113,38 +113,58 @@ def handle_message(event):
         line_bot_api = MessagingApi(api_client)
 
         quick_reply_options = QuickReply(items=[
-            QuickReplyItem(action=MessageAction(label="人生目標", text="人生目標")),
-            QuickReplyItem(action=MessageAction(label="六大信仰", text="六大信仰")),
-            QuickReplyItem(action=MessageAction(label="禮拜時間", text="影片")),
-            QuickReplyItem(action=MessageAction(label="主麻聚禮", text="禮拜")),
-            QuickReplyItem(action=MessageAction(label="兩個節日", text="連結")),
-            QuickReplyItem(action=MessageAction(label="基礎課程", text="基礎課程")),
-            QuickReplyItem(action=MessageAction(label="參觀清真寺", text="參觀清真寺")),
-            QuickReplyItem(action=MessageAction(label="聖訓學習", text="聖訓學習")),
-            QuickReplyItem(action=MessageAction(label="學習網站", text="學習網站")),
-            QuickReplyItem(action=MessageAction(label="機構網站", text="機構網站")),
-            QuickReplyItem(action=MessageAction(label="穆民基礎", text="穆民基礎")),
-            QuickReplyItem(action=MessageAction(label="穆民手冊", text="穆民手冊")),
-            QuickReplyItem(action=MessageAction(label="清真飲食", text="清真餐廳")),
+            QuickReplyItem(action=MessageAction(label="人生目標", text="人生目標")), #1
+            QuickReplyItem(action=MessageAction(label="六大信仰", text="六大信仰")), #2
+            QuickReplyItem(action=MessageAction(label="真主尊名", text="真主尊名")), #3
+            QuickReplyItem(action=MessageAction(label="禮拜時間", text="禮拜時間")), #4
+            QuickReplyItem(action=MessageAction(label="主麻聚禮", text="主麻聚禮")), #5
+            QuickReplyItem(action=MessageAction(label="參觀清真寺", text="參觀清真寺")), #6
+            QuickReplyItem(action=MessageAction(label="基礎課程", text="基礎課程")), #7
+            QuickReplyItem(action=MessageAction(label="認識先知", text="認識先知")), #8  
+            QuickReplyItem(action=MessageAction(label="聖訓學習", text="聖訓學習")), #9     
+            QuickReplyItem(action=MessageAction(label="兩個節日", text="兩個節日")), #10
+            QuickReplyItem(action=MessageAction(label="學習網站", text="學習網站")), #11
+            QuickReplyItem(action=MessageAction(label="機構網站", text="機構網站")), #12
+            QuickReplyItem(action=MessageAction(label="清真飲食", text="清真飲食")), #13
         ])
 
-        if user_message == '禮拜':
+        if user_message == '人生目標':
             messages = [TextMessage(text='好的，以下是禮拜的資訊！', quick_reply=quick_reply_options)]
-        elif user_message == '圖片':
+        elif user_message == '六大信仰':
             url = request.url_root + 'static/test.jpeg'
             messages = [ImageMessage(original_content_url=url, preview_image_url=url)]
+        elif user_message == '真主尊名':
+            messages = [TextMessage(text='真主尊名', quick_reply=quick_reply_options)]
+        elif user_message == '禮拜時間':
+            messages = [TextMessage(text='禮拜時間', quick_reply=quick_reply_options)]
+        elif user_message == '主麻聚禮':
+            messages = [TextMessage(text='主麻聚禮', quick_reply=quick_reply_options)]
         elif user_message == '參觀清真寺':
             url = request.url_root + 'static/mosque.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
                 TextMessage(text="✅ 點擊下方連結 ✅\n\n馬上預約: https://reurl.cc/NbKpAQ")
             ]
-        elif user_message == '影片':
-            url = request.url_root + 'static/test.MOV'
-            messages = [VideoMessage(original_content_url=url, preview_image_url=url)]
-        elif user_message == '連結':
+        elif user_message == '基礎課程':
+            messages = [TextMessage(text='基礎課程', quick_reply=quick_reply_options)]
+        elif user_message == '認識先知':
+            messages = [TextMessage(text='認識先知', quick_reply=quick_reply_options)]
+        elif user_message == '聖訓學習':
+            messages = [TextMessage(text='聖訓學習', quick_reply=quick_reply_options)]
+        elif user_message == '兩個節日':
+            messages = [TextMessage(text='兩個節日', quick_reply=quick_reply_options)]
+        elif user_message == '學習網站':
             url = 'https://www.islam.org.hk/e19/'
             messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+        elif user_message == '機構網站':
+            url = 'https://www.islam.org.hk/'
+            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+        elif user_message == '清真飲食':
+            url = 'https://www.islam.org.hk/e19/'
+            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+        #################################################
+        #################################################
+        #################################################
         elif user_message == '如何成為穆斯林':
             url = request.url_root + 'static/become_muslim.jpeg'
             messages = [
@@ -153,8 +173,32 @@ def handle_message(event):
             ]
         elif user_message == '如何禮拜':
             messages = [TextMessage(text='準備去禮拜!', quick_reply=quick_reply_options)]
+        elif user_message == '如何封齋':
+            messages = [TextMessage(text='學習中文', quick_reply=quick_reply_options)]
+        elif user_message == '如何天課':
+            url = request.url_root + 'static/mosque.jpeg'
+            messages = [
+                ImageMessage(original_content_url=url, preview_image_url=url),
+                TextMessage(text="✅ 點擊下方連結 ✅\n\n馬上預約: https://reurl.cc/NbKpAQ")
+            ]
+        elif user_message == '如何朝覲':
+            url = 'https://www.islam.org.hk/e19/'
+            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+        elif user_message == '古蘭經學習':
+            url = 'https://www.islam.org.hk/'
+            messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
         else:
-            messages = [TextMessage(text='願真主賜您平安', quick_reply=quick_reply_options)]
+            messages = [TextMessage(text='願真主賜您平安\n使用說明: \n', quick_reply=quick_reply_options)]
+        
+
+
+        # elif user_message == '影片':
+        #     url = request.url_root + 'static/test.MOV'
+        #     messages = [VideoMessage(original_content_url=url, preview_image_url=url)]
+        # elif user_message == '連結':
+        #     url = 'https://www.islam.org.hk/e19/'
+        #     messages = [TextMessage(text=f'這是伊斯蘭之光的網站:\n{url}', quick_reply=quick_reply_options)]
+
 
         print(f"📤 準備回應: {messages}")
 

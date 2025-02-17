@@ -148,7 +148,7 @@ def handle_message(event):
             url = request.url_root + 'static/become_muslim.jpeg'
             messages = [
                 ImageMessage(original_content_url=url, preview_image_url=url),
-                TextMessage(text="✨點擊下方連結✨\n\n預約會議: https://reurl.cc/XZKlxE")
+                TextMessage(text="點擊下方連結🔗 \n\n預約會議: https://reurl.cc/XZKlxE")
             ]
         else:
             messages = [TextMessage(text='願真主賜您平安', quick_reply=quick_reply_options)]
